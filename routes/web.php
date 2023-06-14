@@ -14,6 +14,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\ZohoController::class, 'index']);
-//Route::get('/test', [\App\Http\Controllers\ZohoController::class, 'test']);
-//Route::get('/login', [\App\Http\Controllers\Auth\OAuth2Controller::class, 'testRedirect'])->name('zoho.redirect');
-//Route::get('/login', [\App\Http\Controllers\Auth\OAuth2Controller::class, 'testRedirect'])->name('zoho.redirect');
