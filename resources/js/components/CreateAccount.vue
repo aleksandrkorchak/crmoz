@@ -21,9 +21,6 @@
                                border-b-2
                                border-gray-300
                                appearance-none
-                               dark:text-white
-                               dark:border-gray-600
-                               dark:focus:border-blue-500
                                focus:outline-none
                                focus:ring-0
                                focus:border-blue-600
@@ -37,7 +34,6 @@
                                absolute
                                text-sm
                                text-gray-500
-                               dark:text-gray-400
                                duration-300
                                transform
                                -translate-y-6
@@ -56,13 +52,7 @@
                             Account Name
                         </label>
                         <div v-if="'account_name' in errors">
-                            <p class="
-                                mt-2
-                                text-sm
-                                text-red-600
-                                dark:text-red-500
-
-                            ">
+                            <p class="mt-2 text-sm text-red-600 ">
                                 <span class="font-medium">{{ errors.account_name[0] }}</span>
                             </p>
                         </div>
@@ -81,9 +71,6 @@
                                border-b-2
                                border-gray-300
                                appearance-none
-                               dark:text-white
-                               dark:border-gray-600
-                               dark:focus:border-blue-500
                                focus:outline-none
                                focus:ring-0
                                focus:border-blue-600
@@ -97,7 +84,6 @@
                                absolute
                                text-sm
                                text-gray-500
-                               dark:text-gray-400
                                duration-300
                                transform
                                -translate-y-6
@@ -116,12 +102,7 @@
                             Account Website
                         </label>
                         <div v-if="'account_website' in errors">
-                            <p class="
-                                mt-2
-                                text-sm
-                                text-red-600
-                                dark:text-red-500
-                            ">
+                            <p class="mt-2 text-sm text-red-600 ">
                                 <span class="font-medium">{{ errors.account_website[0] }}</span>
                             </p>
                         </div>
@@ -140,9 +121,6 @@
                                border-b-2
                                border-gray-300
                                appearance-none
-                               dark:text-white
-                               dark:border-gray-600
-                               dark:focus:border-blue-500
                                focus:outline-none
                                focus:ring-0
                                focus:border-blue-600
@@ -156,7 +134,6 @@
                                absolute
                                text-sm
                                text-gray-500
-                               dark:text-gray-400
                                duration-300
                                transform
                                -translate-y-6
@@ -175,12 +152,7 @@
                             Account Phone (123-456-7890)
                         </label>
                         <div v-if="'account_phone' in errors">
-                            <p class="
-                                mt-2
-                                text-sm
-                                text-red-600
-                                dark:text-red-500
-                            ">
+                            <p class="mt-2 text-sm text-red-600 dark:text-red-500 ">
                                 <span class="font-medium">{{ errors.account_phone[0] }}</span>
                             </p>
                         </div>

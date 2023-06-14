@@ -16,7 +16,7 @@ class Account
         $params = '?fields='. implode(',',$fields);
         $response = Http::get('https://www.zohoapis.com/crm/v2/accounts' . $params);
 
-        return $response->json();
+        return $response->json() ?? ['data' => []];
     }
 
     public function allAccountsWithFields() {
