@@ -16,7 +16,7 @@ class OAuth2Seeder extends Seeder
         OAuth2::insert([
             'client_id' => '1000.G0LSTF25AB9LYS099VEKWWN4D27U5B',
             'client_secret' => '8f94b206881d0dfa51c130a9a88dc22f395211cbb4',
-            'scope' => 'ZohoCRM.modules.ALL',
+            'scope' => 'ZohoCRM.modules.ALL,ZohoCRM.settings.ALL,ZohoCRM.users.ALL,ZohoCRM.org.ALL,ZohoCRM.bulk.ALL',
             'redirect_uri' => 'http://localhost/',
         ]);
 
