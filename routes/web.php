@@ -14,3 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\ZohoController::class, 'index']);
+Route::get('/accounts', \App\Http\Controllers\Account\IndexController::class)->name('account.index');
+Route::get('/accounts/create', \App\Http\Controllers\Account\CreateController::class);
+Route::post('/accounts', \App\Http\Controllers\Account\StoreController::class);
+Route::get('/deals', \App\Http\Controllers\Deal\IndexController::class)->name('deal.index');
+Route::get('/deals/create', \App\Http\Controllers\Deal\CreateController::class);
+Route::post('/deals', \App\Http\Controllers\Deal\StoreController::class);
